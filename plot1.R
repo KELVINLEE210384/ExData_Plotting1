@@ -8,7 +8,7 @@ HousePower$Date <- as.Date(HousePower$Date, format="%d/%m/%Y")
 SubHousePower <- subset(HousePower, Date >= "2007-02-01" & Date<="2007-02-02")
 
 #Open graphic device png
-png("plot3.png", width=480, height=480)
+png("plot1.png", width=480, height=480)
 
 #Plot histogram for Global Active Power
 hist(SubHousePower$Global_active_power, col="red", main="Global Active Power", xlab= "Global Active Power (kilowatts)")
